@@ -1,0 +1,140 @@
+@charset "utf-8";
+/**----------------------------------- 公共基本属性设----------------------------------- */
+ul,li,img{margin:0;padding:0;border:0;}
+div,ul,li{list-style:none;zoom:1; overflow:hidden}
+h1,h2,h3{margin:10px 0;}
+input{background:transparent;outline:none}
+input,textarea{font-family:"Microsoft YaHei",Helvetica,Arial,sans-serif;webkit-appearance:none;background-color:#fff;}
+
+a,a:visited{color:#1866A3;text-decoration:none; outline:none;}
+a:hover{color:#555; text-decoration:none; }
+a:active{star:expression(this.onFocus=this.blur());}
+.minHeight{min-height:600px;_height:600px; overflow:visible;}
+.even_odd{background-color:#fafafa}
+.clear{clear:both;height:0px;width:0px; overflow:hidden;}
+.centerContainer{text-align:center;letter-space:-0;}
+.centerBox{display:-moz-inline-stack;display:inline-block;*display:inline;zoom:1;}
+.hideDiv{display:none;}
+
+.popStyle_2{display:none;position:absolute;z-index:9;width:100px;padding:9px;text-align:center;}
+/*.popStyle_2 .arrowBg{margin-left:43px;top:0;width:10px;height:10px;background:url('../images/borderArrow.png') no-repeat center; position:absolute; z-index:2;}*/
+.popStyle_2 .inner{border:solid 1px #bbb;border-radius:3px;box-shadow:2px 2px 2px 1px #eee;background-color:#fff;}
+.popStyle_2 a ,.popStyle_2 a:visited{display:block;height:30px;line-height:30px;text-align:center;color:#555;}
+.popStyle_2 a:hover{background-color:#eee}
+.popStyle_2 .border{border-bottom:solid 1px #ccc;}
+
+.userFormDiv .hrLine{margin:0 auto;width:85%;margin-top:10px;margin-bottom:10px;border-bottom:dotted 1px #ccc;background-color:#fff;}
+.userFormDiv .formStyle{margin:0 auto;width:500px;}
+.userFormDiv .regiTime{margin-right:10px;text-align:center}
+.userFormDiv .userThumbUpload{margin:0 auto;width:120px;}
+.userFormDiv #uploadThumb img{width:100px;border-radius:100px;border:solid 2px #fff;box-shadow:2px 2px 2px 1px #aaa;}
+.userFormDiv .homeState{margin-top:10px;}
+.userFormDiv .homeState li{display:-moz-inline-stack;display:inline-block;*display:inline;zoom:1;}
+.homeState a ,.homeState a:visited{display:block;padding:5px; background-color:#fafafa;color:#666;}
+.userFormDiv .homeState a:hover,.homeStateSelected a,.homeStateSelected a:visited{background-color:#F27887;color:#fff;}
+.userFormDiv #userBgTip{color:#FF6699;}
+.userFormDiv textarea{width:98%;height:50px;border:solid 1px #ccc;}
+
+.users li{float:left;margin-right:5px; line-height:20px;}
+.users .eachOne{margin-bottom:15px;padding:5px;}
+.users .eachOne:nth-child(odd){background-color:#fafafa}
+.users .thumb,.users .right{float:left;}
+.users .right{width:100%;height:100%;}
+.users .thumb{margin-left:-100%;width:40px;height:100%; background-color:#aaa}
+.users .thumb img{width:40px;height:40px;border-radius:2px;}
+.users .rightInnner{margin-left:50px;height:100%;padding:0 5px 15px;}
+.users .topBar{padding-bottom:5px;margin-bottom:10px;border-bottom:dashed 1px #eee;}
+.users .name{float:left;}
+.users .acts{float:right;color:#999;}
+.users .acts a, .users .acts a:visited{color:#EE7D7D;}
+.users .acts a:hover{color:#E53663;}
+
+
+.msgsDiv .eachOne{margin-bottom:10px;padding:5px;}
+.msgsDiv .eachOne:nth-child(odd){background-color:#fafafa}
+.msgsDiv .order{font-weight:bold;color:#777}
+.msgsDiv li{float:left;margin-right:5px; line-height:25px;}
+.msgsDiv .userName{color:#666;}
+.msgsDiv .delMsg a, .msgsDiv .delMsg a:visited{padding:0 4px;color:#EE7D7D;}
+.msgsDiv .delMsg a:hover{color:#fff; background-color:#E53663}
+.msgMark{color:#aaa;}
+/*.msgsDiv img{width:expression(this.width>40?"40px":this.width); max-height:40px; height:expression(this.height>40?"40px":this.height);}*/
+
+/**----------------------------------- js弹出窗 ----------------------------------- */
+
+.popDialog{border:solid 1px #ccc;background-color:#fff; white-space:nowrap;z-index:99; position:absolute;}
+.poppop{color:#555;line-height:25px;padding:5px 10px;font-family:Arial, Helvetica, sans-serif;}
+.alertPop{line-height:25px;padding:0 10px;border:solid 1px #ccc;background-color:#fff;color:#666;white-space:nowrap;z-index:99; position:absolute;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.popWin{background-color:#fff;white-space:nowrap;z-index:99;position:absolute;}
+#backScreen{ display:none;width:100%;top:0;left:0; position:absolute;z-index:99; background-color:#fdfdfd;filter:alpha(Opacity=70);-moz-opacity:0.7;opacity: 0.7;}
+#alertBox{display:none;border:solid 1px #ccc;background-color:#fff;z-index:999;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-webkit-box-shadow:0 20px 80px 5px #eee; -moz-box-shadow:0 20px 80px 5px #eee;box-shadow:0 20px 80px 5px #eee;}
+#alertBox .borderStyle{border:solid 0px #fff;}
+#alertContent{margin:10px;padding:10px;}
+/*#alertTitle{padding-left:5px;height:35px;line-height:35px;border-bottom:solid 1px #ddd;background:url('../images/bodyBg.png');background-color:#eee }*/
+#alertTitle .alertTitle,#alertTitle #alertMsg{float:left;margin-right:10px;}
+#alertTitle #alertMsg{color:#CC3333;}
+#alertBox .closeBtn{float:right;margin-right:5px;}
+#alertBox .closeBtn a,#alertBox .closeBtn a:visited{padding:0 4px;color:#DF4527; font-family:"微软雅黑"}
+#alertBox .closeBtn a:hover{border:solid 1px #DF4527;color:#fff;background-color:#FA775D}
+
+/**----------------------------------- uploadifyQueueItem ----------------------------------- */
+.uploadDiv{margin:0 auto;width:150px; text-align:center;}
+.uploadDiv .uploadBtn a,.uploadDiv .uploadBtn:visited{display:block;padding:5px 5px;color:#555;background-color:#eee}
+.uploadDiv .uploadBtn a:hover{color:#fff;background-color:#EE7D7D}
+.uploadProgress ul{margin:2px 0;width:0%;height:20px; line-height:20px;color:#fff;background-color:#0099FF;}
+
+.errorTip,label.error{padding-left:5px;}
+.alertTip{height:25px; line-height:25px;color:#FF6699; text-align:center;}
+.errorTip{color:#F99797;}
+
+.formStyle .alertTip{height:15px; line-height:15px;}
+.formStyle .input_wraper{width:100%;padding:5px 0;}
+.formStyle .input_wraper span{margin-left:10px;}
+.formStyle .input_title{width:97%;padding-left:5px;line-height:25px;border-left:solid 2px #FDA5A5;border-radius:2px;}
+.formStyle .input_area{position:relative;margin:2px 0;}
+.formStyle .input_area input{width:97%;padding-left:5px;height:35px;line-height:35px;border:solid 1px #ccc;border-radius:2px;}
+.formStyle .input_area textarea{width:97%;height:100px;border:solid 1px #ccc;border-radius:2px;}
+.formStyle .inputError{line-height:20px;top:1px;left:5px;position:absolute; color:#F88383; background-color:#fff}
+
+.flatSubBtn a ,.flatSubBtn a:visited{display:block;width:80px;height:35px;line-height:35px;border-radius:2px;text-align:center;color:#fff;background-color:#1983C6}
+.flatSubBtn a:hover{background-color:#F27887;color:#fff;}
+.whiteBtn a ,.whiteBtn a:visited{display:block;width:80px;height:33px;line-height:33px;border:solid 1px #ccc;color:#666;border-radius:2px;text-align:center;}
+.whiteBtn a:hover{color:#fff;border:solid 1px #F27887;background-color:#F27887}
+
+.formStyle .formBtn{margin-top:5px;clear:both;}
+.formStyle .formBtn li{float:left;margin-right:10px;text-align:center;}
+.formStyle .mainBtn{width:100px;}
+.formStyle .mainBtn .bottomLine{height:1px;margin-right:10px;border:solid 1px #f1f1f1; border-top:0;background-color:#f9f9f9;}
+.formStyle .mainBtn a ,.formStyle .mainBtn a:visited,.formStyle .subBtn a ,.formStyle .subBtn  a:visited{display:block;line-height:36px;color:#666;cursor:pointer;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+/*.formStyle .mainBtn a ,.formStyle .mainBtn a:visited{width:90px;border:solid 1px #ddd;background:url('../images/slines.png');}*/
+.formStyle .subBtn a ,.formStyle .subBtn  a:visited{width:80px;border:solid 1px #eee;background-color:#fdfdfd; }
+.formStyle .mainBtn a:hover,.subBtn a:hover{color:#FF6699;}
+
+.LtopicContainer{border:0;padding:0; background-color:transparent;box-shadow:0 0 #eee;}
+.LtopicContainer .LtopicLeft,.LtopicContainer .right{float:left;}
+.LtopicContainer .LtopicLeft{margin-left:-100%;width:35px;}
+.LtopicContainer .LtopicThumb{border:solid 1px #888;height:33px;border-radius:33px; background-color:#fff}
+.LtopicContainer .LtopicThumb img{margin:1px;width:31px;height:31px;border-radius:31px;}
+.LtopicContainer .LtopicThumb a:hover img{alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;}
+.LtopicContainer .LtopicNum{width:33px;height:33px;border-radius:33px;border:solid 1px #888;background-color:#fff}
+.LtopicContainer .LtopicNum a ,.LtopicContainer .LtopicNum a:visited{display:block;margin:1px;width:31px;height:31px; line-height:30px; text-align:center;color:#666;border-radius:33px;background-color:#fff}
+.LtopicContainer .LtopicNum a:hover{color:#E53663;}
+.LtopicContainer .LtopicSnum{margin-top:1px;margin-left:7px;text-align:center;font-size:12px;}
+.LtopicContainer .LtopicSnum a ,.LtopicContainer .LtopicSnum a:visited{display:block;width:20px;height:15px; line-height:17px;border:solid 1px #aaa; background-color:#fff;color:#888;border-radius:2px;}
+.LtopicContainer .LtopicSnum a:hover{color:#E53663;}
+
+.LtopicContainer .right{width:100%;height:100%;background:url('http://www.miguyu.com/View/images/dashLine.png') repeat-y 18px;}
+.LtopicContainer .rightInnner{margin-top:10px;margin-left:40px;height:100%;}
+.LtopicContainer .topicTitle{line-height:30px;border-bottom:dotted 1px #ccc;}
+.LtopicContainer .topicTitle a ,.LtopicContainer .topicTitle a:visited{font-weight:bold;font-size:16px;color:#337AB7;}
+.LtopicContainer .topicTitle a:hover{color:#E53663;}
+
+.LtopicContainer .linksDiv{margin:10px 0 10px -15px;}
+.LtopicContainer .linksDiv li{float:left;}
+.LtopicContainer .eachLink{float:left;color:#aaa;height:40px;line-height:30px;padding-left:15px;background:url('http://www.miguyu.com/View/images/dashLine2.png') repeat-x 0 20px;}
+.LtopicContainer .linksDiv .noThumb{margin-top:7px;}
+.LtopicContainer .linksDiv .linkThumb{width:25px;height:25px;border-radius:25px;border:solid 1px #aaa;box-shadow:1px 1px 1px 1px #eee;}
+.LtopicContainer .linkTitle a ,.LtopicContainer .linkTitle a:visited{border-radius:2px;padding:4px 6px;border:solid 1px #aaa;color:#666; background-color:#fff;box-shadow:1px 1px 1px 1px #eee;}
+.LtopicContainer .noThumb a:hover{border:solid 1px #0779EE;background-color:#0779EE;color:#fff;}
+.LtopicContainer .recommd a:hover{background-color:#f7f7f7;}
+.LtopicContainer .support{padding:20px 0; text-align:center;}

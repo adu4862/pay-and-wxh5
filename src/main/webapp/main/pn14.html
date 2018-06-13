@@ -1,0 +1,1216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>首页 [第2页] -影范电影</title>
+    <meta name="keywords" content="中英字幕电影，中文字幕电影，最新美剧，最新高清电影下载，百度网盘电影，磁力电影下载"/>
+    <meta name="description" content="影范电影 -每日更新最新中文字幕电影，剧集，动漫，纪录片，分享高清电影下载，百度网盘电影，磁力电影下载，盘点热门电影合集。">
+    <meta name="siteBaseUrl" content="http://www.pniao.com"/>
+    <meta id="mobileView" name="viewport"
+          content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1, maximum-scale=1,"/>
+    <link rel="shortcut icon" href="http://my-photos.changs1992.cn/bitbug_favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="http://www.pniao.com/View/style/mov.css"/>
+    <script type="text/javascript" src="http://www.pniao.com/Plugin/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="http://www.pniao.com/Plugin/movCommon.min.js"></script>
+</head>
+<body>
+<div id="container" class="container">
+
+    <div class="mob_header">
+        <div class="mob_top">
+            <div id="soMovForm" class="soMovForm" action="http://www.pniao.com/Mov/so/">
+                <a href="javascript:;"></a>
+                <div class="left">
+                    <div class="leftInnner input">
+                        <input type="text" id="movSoWord" name="movSoWord" value="" inColor="#555" outColor="#999"
+                               autocomplete="off"/>
+                        <div class="soTipDiv" id="soTipDiv"></div>
+                    </div>
+                </div>
+                <div class="btns">
+                    <div id="movSoBtn" class="subBtn"><a href="javascript:;"></a></div>
+                    <div id="exactlyBtn" class="exactlyBtn"><a href="javascript:;"></a></div>
+                    <div class="popMenu popStyle_2 exactlySoMenu">
+                        <div class="arrowBg"></div>
+                        <div class="inner">
+                            <ul><a href="javascript:;" type="title_">标题</a></ul>
+                            <ul><a href="javascript:;" type="actors">演员</a></ul>
+                            <ul class="noBorder"><a href="javascript:;" type="director">导演</a></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---mob_top--->
+
+        <div class="mob_mainMenu">
+            <div class="parent">
+                <li class="selected"><a href="http://www.changs1992.cn">影范电影</a></li>
+                <!--<li id="mob_lite"><a href="javascript:;">精选</a></li>-->
+                <!--<li><a href="http://www.pniao.com/Mtopic">合集</a></li>-->
+                <!--<li><a href="http://www.pniao.com/Mov/seek">求片</a></li>-->
+                <!--<li><a href="http://www.pniao.com/Discuss">留言</a></li>-->
+                <!--<div class="headerUserMenu">-->
+                <!--<div class="thumb">-->
+                <!--<a href="javascript:;" >-->
+                <!--<img alt="" src="http://www.pniao.com/View/images/defaultUser_thumb.png" />-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!---headerUserMenu--->
+            </div>
+            <!---parent--->
+            <!--<div class="sondiv">-->
+            <!--<li><a href="http://www.pniao.com/Mov/todayUp">今日更新</a></li>-->
+            <!--<li><a href="http://www.pniao.com/Mov/movie">电影</a></li>-->
+            <!--<li><a href="http://www.pniao.com/Mov/tv">剧集</a></li>-->
+            <!--<li><a href="http://www.pniao.com/Mov/comic">动漫</a></li>-->
+            <!--<li><a href="http://www.pniao.com/Mov/doc">纪录片</a></li>-->
+            <!--<li><a href="http://www.pniao.com/Mov/tvUp">追剧</a></li>-->
+
+
+            <!--</div>-->
+            <!---sonDiv--->
+        </div>
+        <!---mob_mainMenu--->
+
+        <div class="recommdMenu">
+            <div class="each movie_">
+                <li class="typeTitle">电影</li>
+                <li title="新片榜"><a href="javascript:;"
+                                   onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/movie/新片榜');">新片榜</a></li>
+                <li title="一周口碑榜"><a href="javascript:;"
+                                     onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/movie/一周口碑榜');">一周口碑榜</a>
+                </li>
+                <li title="热门"><a href="javascript:;"
+                                  onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/movie/热门');">热门</a></li>
+                <li title="经典"><a href="javascript:;"
+                                  onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/movie/经典');">经典</a></li>
+                <li title="豆瓣高分"><a href="javascript:;"
+                                    onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/movie/豆瓣高分');">豆瓣高分</a>
+                </li>
+                <li title="冷门佳片"><a href="javascript:;"
+                                    onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/movie/冷门佳片');">冷门佳片</a>
+                </li>
+                <li title="豆瓣250"><a href="javascript:;"
+                                     onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/movie/豆瓣250');">豆瓣250</a>
+                </li>
+            </div>
+            <div class="each tv_">
+                <li class="typeTitle">剧集</li>
+                <li title="热门"><a href="javascript:;"
+                                  onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/tv/热门');">热门</a></li>
+                <li title="美剧"><a href="javascript:;"
+                                  onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/tv/美剧');">美剧</a></li>
+                <li title="英剧"><a href="javascript:;"
+                                  onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/tv/英剧');">英剧</a></li>
+                <li title="韩剧"><a href="javascript:;"
+                                  onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/tv/韩剧');">韩剧</a></li>
+                <li title="日剧"><a href="javascript:;"
+                                  onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/tv/日剧');">日剧</a></li>
+                <li title="国产剧"><a href="javascript:;"
+                                   onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/tv/国产剧');">国产剧</a></li>
+                <li title="日本动画"><a href="javascript:;"
+                                    onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/tv/日本动画');">日本动画</a></li>
+                <li title="纪录片"><a href="javascript:;"
+                                   onclick="javascript:movieAct(this,'ajaxUrl','/Mov/recommd/tv/纪录片');">纪录片</a></li>
+            </div>
+            <div class="each other_">
+                <li class="typeTitle">榜单</li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/awards');">获奖提名作品</a></li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/favRank');">观影计划</a></li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/clickRank');">一周点击榜</a>
+                </li>
+
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/soRank');">周热搜榜</a></li>
+            </div>
+            <div class="clear"></div>
+            <div class="each sort_">
+                <li class="typeTitle">类型</li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/剧情');">剧情</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/喜剧');">喜剧</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/爱情');">爱情</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/惊悚');">惊悚</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/动作');">动作</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/犯罪');">犯罪</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/冒险');">冒险</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/悬疑');">悬疑</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/恐怖');">恐怖</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/奇幻');">奇幻</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/科幻');">科幻</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/动画');">动画</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/家庭');">家庭</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/传记');">传记</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/历史');">历史</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/战争');">战争</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/同性');">同性</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/音乐');">音乐</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/运动');">运动</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/古装');">古装</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/情色');">情色</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/西部');">西部</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/灾难');">灾难</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/武侠');">武侠</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/黑色电影');">黑色电影</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/sorts/短片');">短片</a>
+                </li>
+                <li class="clear"></li>
+                <li class="typeTitle">地区</li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/美国');">美国</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/日本');">日本</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/英国');">英国</a>
+                </li>
+                <li><a href="javascript:;"
+                       onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/中国大陆');">中国大陆</a></li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/法国');">法国</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/香港');">香港</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/韩国');">韩国</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/德国');">德国</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/意大利');">意大利</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/加拿大');">加拿大</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/台湾');">台湾</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/西班牙');">西班牙</a>
+                </li>
+                <li><a href="javascript:;"
+                       onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/澳大利亚');">澳大利亚</a></li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/比利时');">比利时</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/泰国');">泰国</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/瑞典');">瑞典</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/俄罗斯');">俄罗斯</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/印度');">印度</a>
+                </li>
+                <li><a href="javascript:;" onclick="javascript:movieAct(this,'ajaxUrl','/Mov/tag/country/伊朗');">伊朗</a>
+                </li>
+            </div>
+            <div class="multiSoContainer">
+                <div class="multiSo ">
+                    <a class="linkGo" href="javascript:;"></a>
+                    <ul class="multi_type">
+                        <li class="multiSo_selected" title="all"><a href="javascript:;"
+                                                                    onclick="javascript:movieAct(this,'multiSo');">类型</a>
+                        </li>
+                        <li title="movie"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">电影</a>
+                        </li>
+                        <li title="tv"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">剧集</a></li>
+                        <li title="doc"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">纪录片</a>
+                        </li>
+                        <li title="comic"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">动漫</a>
+                        </li>
+                    </ul>
+                    <ul class="multi_sorts">
+                        <li class="multiSo_selected" title="分类"><a href="javascript:;"
+                                                                   onclick="javascript:movieAct(this,'multiSo');">分类</a>
+                        </li>
+                        <li title="剧情"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">剧情</a></li>
+                        <li title="喜剧"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">喜剧</a></li>
+                        <li title="爱情"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">爱情</a></li>
+                        <li title="惊悚"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">惊悚</a></li>
+                        <li title="动作"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">动作</a></li>
+                        <li title="犯罪"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">犯罪</a></li>
+                        <li title="冒险"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">冒险</a></li>
+                        <li title="悬疑"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">悬疑</a></li>
+                        <li title="恐怖"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">恐怖</a></li>
+                        <li title="奇幻"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">奇幻</a></li>
+                        <li title="科幻"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">科幻</a></li>
+                        <li title="动画"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">动画</a></li>
+                        <li title="家庭"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">家庭</a></li>
+                        <li title="传记"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">传记</a></li>
+                        <li title="历史"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">历史</a></li>
+                        <li title="战争"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">战争</a></li>
+                        <li title="同性"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">同性</a></li>
+                        <li title="音乐"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">音乐</a></li>
+                        <li title="运动"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">运动</a></li>
+                        <li title="古装"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">古装</a></li>
+                        <li title="情色"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">情色</a></li>
+                        <li title="西部"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">西部</a></li>
+                        <li title="灾难"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">灾难</a></li>
+                        <li title="武侠"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">武侠</a></li>
+                        <li title="黑色电影"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">黑色电影</a>
+                        </li>
+                        <li title="短片"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">短片</a></li>
+                    </ul>
+                    <ul class="multi_country">
+                        <li class="multiSo_selected" title="国家地区"><a href="javascript:;"
+                                                                     onclick="javascript:movieAct(this,'multiSo');">国家地区</a>
+                        </li>
+                        <li title="美国"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">美国</a></li>
+                        <li title="日本"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">日本</a></li>
+                        <li title="英国"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">英国</a></li>
+                        <li title="中国大陆"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">中国大陆</a>
+                        </li>
+                        <li title="法国"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">法国</a></li>
+                        <li title="香港"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">香港</a></li>
+                        <li title="韩国"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">韩国</a></li>
+                        <li title="德国"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">德国</a></li>
+                        <li title="意大利"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">意大利</a>
+                        </li>
+                        <li title="加拿大"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">加拿大</a>
+                        </li>
+                        <li title="台湾"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">台湾</a></li>
+                        <li title="西班牙"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">西班牙</a>
+                        </li>
+                        <li title="澳大利亚"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">澳大利亚</a>
+                        </li>
+                        <li title="比利时"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">比利时</a>
+                        </li>
+                        <li title="泰国"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">泰国</a></li>
+                        <li title="瑞典"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">瑞典</a></li>
+                        <li title="俄罗斯"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">俄罗斯</a>
+                        </li>
+                        <li title="印度"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">印度</a></li>
+                        <li title="伊朗"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">伊朗</a></li>
+                    </ul>
+                    <ul class="multi_year">
+                        <li class="multiSo_selected" title="年份"><a href="javascript:;"
+                                                                   onclick="javascript:movieAct(this,'multiSo');">年份</a>
+                        </li>
+                        <li title="2018"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">2018</a>
+                        </li>
+                        <li title="2017"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">2017</a>
+                        </li>
+                        <li title="2016"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">2016</a>
+                        </li>
+                        <li title="2015"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">2015</a>
+                        </li>
+                        <li title="2014"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">2014</a>
+                        </li>
+                        <li title="2013"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">2013</a>
+                        </li>
+                        <li title="2012"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">2012</a>
+                        </li>
+                        <li title="2011"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">2011</a>
+                        </li>
+                        <li title="2010"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">2010</a>
+                        </li>
+                        <li title="2009"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">2009</a>
+                        </li>
+                        <li title="2008"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo');">2008</a>
+                        </li>
+                        <li><input type="text" id="multiSo_year" name="multiSo_year"/></li>
+                    </ul>
+                    <ul class="multi_subBtn">
+                        <li class="subBtn"><a href="javascript:;" onclick="javascript:movieAct(this,'multiSo','sub');">提交查询</a>
+                        </li>
+                        <li class="resetBtn"><a href="javascript:;"
+                                                onclick="javascript:movieAct(this,'multiSo','reset');">重置</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!---multiSo--->
+    </div>
+    <!---recommdMenu--->
+</div>
+<div class="clear"></div>
+<div class="mainContainer">
+    <div class="mainBox minHeight">
+        <div class="subMenu">
+            <div class="left orderMenu">
+                <!--<li class="selected"><a rel="nofollow" href="http://www.pniao.com/Mov/main/time">-->
+                    <!--最新发布</a></li>-->
+                <!--<li><a rel="nofollow" href="http://www.pniao.com/Mov/main/upDown">-->
+                    <!--下载更新</a></li>-->
+                <!--<li><a rel="nofollow" href="http://www.pniao.com/Mov/main/score">-->
+                    <!--豆瓣评分</a></li>-->
+            </div>
+            <div class="right">
+                <li>
+                    <span><a href="javascript:;"
+                             onclick="javascript:movieAct(this,'ajaxUrl','/Mov/multiSo/all/分类/国家地区/2017');">0</a></span>
+                    <span><a title="0" href="javascript:;" onclick="javascript:movieAct(this,'delMultiSoCookie');">&times;</a></span>
+                </li>
+                <li>
+                    <span><a href="javascript:;"
+                             onclick="javascript:movieAct(this,'ajaxUrl','/Mov/multiSo/all/分类/国家地区/2017');">1</a></span>
+                    <span><a title="1" href="javascript:;" onclick="javascript:movieAct(this,'delMultiSoCookie');">&times;</a></span>
+                </li>
+            </div>
+        </div>
+
+
+        <div class="movies">
+            <div class="movieFlag eachOne" id="movieFlag44586">
+                <div class="movTitle">
+                    <li class="recommd">推荐</li>
+                    <li><a target="_blank" href="http://www.changs1992.cn/wechat/web?code=44586">潜伏4：锁命亡灵&nbsp; Insidious: The Last Key&nbsp; (2018)</a></li>
+                    <li>[ 蓝光720p/1080p中英字幕 ][ 蓝光洗版 ][ 远鉴字幕组&amp;Orange字幕组/首杀字幕组 ]</li>
+
+                </div>
+                <div class="movInfo">
+                    <div class="right"><div class="rightInnner">
+                        <div class="briefBox"><div class="briefInner">
+                            <div class="brief">《阴儿房第3章：从灵开始》琳雪伊回归饰演超自然心理学家，由《失魂记忆》导演亚当罗勃提尔执导、《阴儿房》系列原创团队之一的雷沃纳尔执笔剧本、鬼才导演温子仁将担任制片，打造极致惊悚的最新经典。&lt;　《阴儿房第4章：锁命亡灵》不仅将带来恐怖加...</div>
+                        </div></div>
+                        <div class="info">
+                            <ul>
+                                <li>导演:</li>
+                                <li>亚当·罗比特尔</li>
+                            </ul>
+
+                            <ul>
+                                <li>主演:</li>
+                                <li>林·沙烨</li>
+                                <li>雷·沃纳尔</li>
+                            </ul>
+
+                            <ul>
+                                <li>分类:</li>
+                                <li>惊悚</li>
+                                <li>恐怖</li>
+                            </ul>
+
+                            <ul>
+                                <li>地区:</li>
+                                <li>美国</li>
+                            </ul>
+
+                            <ul>
+                                <li class="score">
+                                    <a rel="nofollow" target="blank" href="https://movie.douban.com/subject/26794994">
+                                        豆瓣 5.8					</a>
+                                </li>
+                                <li class="imdb"><a rel="nofollow" target="blank" href="https://www.imdb.com/title/tt5726086">IMDb</a></li>
+                            </ul>
+
+
+                            <ul>
+                                <li>发布时间：2018-03-16</li>
+                            </ul>
+                            <ul>
+                                <li class="fav">
+                                    <a href="javascript:;" >+观影计划 56人</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!---info--->
+                    </div></div>
+                    <!---right--->
+                    <div class="left">
+                        <div class="thumb">
+                            <a href="http://www.changs1992.cn/wechat/web?code=44586">
+                                <img alt="潜伏4：锁命亡灵" class="orginSrc" data-url="http://static.miguyu.com/p/movsp/23/44586.jpg" src="http://static.miguyu.com/p/movsp/23/44586.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <!---left--->
+                </div>
+                <!---movInfo--->
+                <div class="movActs">
+                    <div class="acts">
+
+                    </div>
+                </div>
+            </div>
+            <!---eachOne--->
+            <div class="movieFlag eachOne" id="movieFlag44737">
+                <div class="movTitle">
+                    <li class="recommd">推荐</li>
+                    <li><a target="_blank" href="http://www.changs1992.cn/wechat/web?code=44737">恋爱禁止的世界&nbsp; 恋と嘘&nbsp; (2017)</a></li>
+                    <li>[ 蓝光720p日语中字 ][ 猪猪日剧字幕组 ]</li>
+
+                </div>
+                <div class="movInfo">
+                    <div class="right"><div class="rightInnner">
+                        <div class="briefBox"><div class="briefInner">
+                            <div class="brief">漫改真人爱情电影，影片由古泽健([今天开始恋爱吧])执导，森川葵、北村匠海、佐藤宽太等人主演。近未来的日本政府实行超・少子化对策法案，为满16岁的人强制指定结婚对象，配对最适合的伴侣，但是男主角根岛由佳吏已经有了自己喜欢的人。</div>
+                        </div></div>
+                        <div class="info">
+                            <ul>
+                                <li>导演:</li>
+                                <li>古泽健</li>
+                            </ul>
+
+                            <ul>
+                                <li>主演:</li>
+                                <li>森川葵</li>
+                                <li>北村匠海</li>
+                            </ul>
+
+                            <ul>
+                                <li>分类:</li>
+                                <li>爱情</li>
+                            </ul>
+
+                            <ul>
+                                <li>地区:</li>
+                                <li>日本</li>
+                            </ul>
+
+                            <ul>
+                                <li class="score">
+                                    <a rel="nofollow" target="blank" href="https://movie.douban.com/subject/27011480">
+                                        豆瓣 4.2					</a>
+                                </li>
+                                <li class="imdb"><a rel="nofollow" target="blank" href="https://www.imdb.com/title/tt6733372">IMDb</a></li>
+                            </ul>
+
+
+                            <ul>
+                                <li>发布时间：2018-03-21</li>
+                            </ul>
+                            <ul>
+                                <li class="fav">
+                                    <a href="javascript:;" >+观影计划 27人</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!---info--->
+                    </div></div>
+                    <!---right--->
+                    <div class="left">
+                        <div class="thumb">
+                            <a href="http://www.changs1992.cn/wechat/web?code=44737">
+                                <img alt="恋爱禁止的世界" class="orginSrc" data-url="http://static.miguyu.com/p/movsp/23/44737.jpg" src="http://static.miguyu.com/p/movsp/23/44737.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <!---left--->
+                </div>
+                <!---movInfo--->
+                <div class="movActs">
+                    <div class="acts">
+
+                    </div>
+                </div>
+            </div>
+            <!---eachOne--->
+            <div class="movieFlag eachOne" id="movieFlag44728">
+                <div class="movTitle">
+                    <li class="recommd">推荐</li>
+                    <li><a target="_blank" href="http://www.changs1992.cn/wechat/web?code=44728">德雷尔一家 第三季&nbsp; The Durrells Season 3&nbsp; (2018)</a></li>
+                    <li>[ 更新至S03E02 ][ 中英字幕 ][ 不着调字幕组&amp;翻托邦字幕组 ]</li>
+
+                </div>
+                <div class="movInfo">
+                    <div class="right"><div class="rightInnner">
+                        <div class="briefBox"><div class="briefInner">
+                            <div class="brief">ITV六集新剧根据根据英国著名作家、博物学家杰拉尔德·德雷尔的回忆录——《希腊三部曲》改编，温情怡人的英剧，。20世纪三十年代，德雷尔随家庭“回归自然”，搬到连电都没通的希腊科孚岛，开始了自己亲近自然而又快乐充实的童年。镜头美到出神入化，剧...</div>
+                        </div></div>
+                        <div class="info">
+                            <ul>
+                                <li>导演:</li>
+                                <li>罗杰·戈比</li>
+                            </ul>
+
+                            <ul>
+                                <li>主演:</li>
+                                <li>凯莉·霍威</li>
+                            </ul>
+
+                            <ul>
+                                <li>分类:</li>
+                                <li>剧情</li>
+                                <li>喜剧</li>
+                            </ul>
+
+                            <ul>
+                                <li>地区:</li>
+                                <li>英国</li>
+                            </ul>
+
+                            <ul>
+                                <li class="score">
+                                    <a rel="nofollow" target="blank" href="https://movie.douban.com/subject/27070655">
+                                        豆瓣 9.6					</a>
+                                </li>
+                                <li class="imdb"><a rel="nofollow" target="blank" href="https://www.imdb.com/title/tt7001874">IMDb</a></li>
+                            </ul>
+
+
+                            <ul>
+                                <li>发布时间：2018-03-20</li>
+                            </ul>
+                            <ul>
+                                <li class="fav">
+                                    <a href="javascript:;" >+观影计划 145人</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!---info--->
+                    </div></div>
+                    <!---right--->
+                    <div class="left">
+                        <div class="thumb">
+                            <a href="http://www.changs1992.cn/wechat/web?code=44728">
+                                <img alt="德雷尔一家 第三季" class="orginSrc" data-url="http://static.miguyu.com/p/movsp/23/44728.jpg" src="http://static.miguyu.com/View/images/imgLoad.png">
+                            </a>
+                            <div class="sessionProgress">
+                                <div class="csessionProgress" style="width:33.333333333333%">2/6</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---left--->
+                </div>
+                <!---movInfo--->
+                <div class="movActs">
+                    <div class="acts">
+
+                    </div>
+                </div>
+            </div>
+            <!---eachOne--->
+            <div class="movieFlag eachOne" id="movieFlag44699">
+                <div class="movTitle">
+                    <li class="recommd">推荐</li>
+                    <li><a target="_blank" href="http://www.changs1992.cn/wechat/web?code=44699">爱的路&nbsp; Ein Weg&nbsp; (2017)</a></li>
+                    <li>[ DVDRip中字 ][ QAF字幕组 ]</li>
+
+                </div>
+                <div class="movInfo">
+                    <div class="right"><div class="rightInnner">
+                        <div class="briefBox"><div class="briefInner">
+                            <div class="brief">热恋与激情过后，两个人太认识对方，爱情路上，如何才能细水长流？一部真实刻画爱情长久关係的电影，爱到永远究竟有几远？在德国图林根，住有一对同性恋人，安祖尔工作顺利，马田的工作却不再如意，二人的儿子，亦终于长大成人离家。再次拥有二人世界的他们，...</div>
+                        </div></div>
+                        <div class="info">
+                            <ul>
+                                <li>导演:</li>
+                                <li>克里斯·米瑞阿</li>
+                            </ul>
+
+                            <ul>
+                                <li>主演:</li>
+                                <li>Mike Hoffmann</li>
+                                <li>Tom Böttcher</li>
+                            </ul>
+
+                            <ul>
+                                <li>分类:</li>
+                                <li>剧情</li>
+                                <li>爱情</li>
+                            </ul>
+
+                            <ul>
+                                <li>地区:</li>
+                                <li>德国</li>
+                            </ul>
+
+                            <ul>
+                                <li class="score">
+                                    <a rel="nofollow" target="blank" href="https://movie.douban.com/subject/26965693">
+                                        豆瓣 6.6					</a>
+                                </li>
+                                <li class="imdb"><a rel="nofollow" target="blank" href="https://www.imdb.com/title/tt5954892">IMDb</a></li>
+                            </ul>
+
+
+                            <ul>
+                                <li>发布时间：2018-03-20</li>
+                            </ul>
+                            <ul>
+                                <li class="fav">
+                                    <a href="javascript:;" >+观影计划 59人</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!---info--->
+                    </div></div>
+                    <!---right--->
+                    <div class="left">
+                        <div class="thumb">
+                            <a href="http://www.changs1992.cn/wechat/web?code=44699">
+                                <img alt="爱的路" class="orginSrc" data-url="http://static.miguyu.com/p/movsp/23/44699.jpg" src="http://static.miguyu.com/View/images/imgLoad.png">
+                            </a>
+                        </div>
+                    </div>
+                    <!---left--->
+                </div>
+                <!---movInfo--->
+                <div class="movActs">
+                    <div class="acts">
+
+                    </div>
+                </div>
+            </div>
+            <!---eachOne--->
+            <div class="movieFlag eachOne" id="movieFlag44679">
+                <div class="movTitle">
+                    <li class="recommd">推荐</li>
+                    <li><a target="_blank" href="http://www.changs1992.cn/wechat/web?code=44679">预兆&nbsp; 予兆 散歩する侵略者 劇場版&nbsp; (2017)</a></li>
+                    <li>[ 蓝光720p日语中字 ][ 猪猪日剧字幕组 ]</li>
+
+                </div>
+                <div class="movInfo">
+                    <div class="right"><div class="rightInnner">
+                        <div class="briefBox"><div class="briefInner">
+                            <div class="brief">日本著名导演黑泽清导演，是黑泽清执导影片《散步的侵略者》番外篇联动日剧电影版，夏帆、染谷将太、东出昌大主演。本片以“外星人入侵”为题，讲述夏帆饰演的妻子遇见丈夫染谷将太就职医院的新任医师东出昌大，医生看似亲和却有着异于常人的气场，随着丈夫诡...</div>
+                        </div></div>
+                        <div class="info">
+                            <ul>
+                                <li>导演:</li>
+                                <li>黑泽清</li>
+                            </ul>
+
+                            <ul>
+                                <li>主演:</li>
+                                <li>夏帆</li>
+                                <li>染谷将太</li>
+                            </ul>
+
+                            <ul>
+                                <li>分类:</li>
+                                <li>科幻</li>
+                            </ul>
+
+                            <ul>
+                                <li>地区:</li>
+                                <li>日本</li>
+                            </ul>
+
+                            <ul>
+                                <li class="score">
+                                    <a rel="nofollow" target="blank" href="https://movie.douban.com/subject/27199831">
+                                        豆瓣 6.1					</a>
+                                </li>
+                                <li class="imdb"><a rel="nofollow" target="blank" href="https://www.imdb.com/title/tt7931422">IMDb</a></li>
+                            </ul>
+
+
+                            <ul>
+                                <li>发布时间：2018-03-20</li>
+                            </ul>
+                            <ul>
+                                <li class="fav">
+                                    <a href="javascript:;" >+观影计划 38人</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!---info--->
+                    </div></div>
+                    <!---right--->
+                    <div class="left">
+                        <div class="thumb">
+                            <a href="http://www.changs1992.cn/wechat/web?code=44679">
+                                <img alt="预兆" class="orginSrc" data-url="http://static.miguyu.com/p/movsp/23/44679.jpg" src="http://static.miguyu.com/View/images/imgLoad.png">
+                            </a>
+                        </div>
+                    </div>
+                    <!---left--->
+                </div>
+                <!---movInfo--->
+                <div class="movActs">
+                    <div class="acts">
+
+                    </div>
+                </div>
+            </div>
+            <!---eachOne--->
+            <div class="movieFlag eachOne" id="movieFlag43149">
+                <div class="movTitle">
+                    <li class="recommd">推荐</li>
+                    <li><a target="_blank" href="http://www.changs1992.cn/wechat/web?code=43149">99.9：刑事专业律师 第二季&nbsp; 99.9-刑事専門弁護士- SEASON II&nbsp; (2018)</a></li>
+                    <li>[ 完结 ][ 全9集 ][ 中日双字 ][ 追新番字幕组&amp;FIX字幕侠 ]</li>
+
+                </div>
+                <div class="movInfo">
+                    <div class="right"><div class="rightInnner">
+                        <div class="briefBox"><div class="briefInner">
+                            <div class="brief">TBS电视台制作的律政推理剧，由木村ひさし执导，宇田学编剧，松本润主演，香川照之、木村文乃共演，。该剧是2016年日剧《99.9-刑事专业律师》的续集，继续讲述专门接收刑事案件的律师深山大翔探求剩余的0.1%的事实，追查还原案件真相的故事。...</div>
+                        </div></div>
+                        <div class="info">
+                            <ul>
+                                <li>导演:</li>
+                                <li>木村尚</li>
+                            </ul>
+
+                            <ul>
+                                <li>主演:</li>
+                                <li>松本润</li>
+                                <li>香川照之</li>
+                            </ul>
+
+                            <ul>
+                                <li>分类:</li>
+                                <li>剧情</li>
+                                <li>犯罪</li>
+                            </ul>
+
+                            <ul>
+                                <li>地区:</li>
+                                <li>日本</li>
+                            </ul>
+
+                            <ul>
+                                <li class="score">
+                                    <a rel="nofollow" target="blank" href="https://movie.douban.com/subject/27065652">
+                                        豆瓣 8.4					</a>
+                                </li>
+                            </ul>
+
+
+                            <ul>
+                                <li>发布时间：2018-01-15</li>
+                            </ul>
+                            <ul>
+                                <li class="fav">
+                                    <a href="javascript:;" >+观影计划 181人</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!---info--->
+                    </div></div>
+                    <!---right--->
+                    <div class="left">
+                        <div class="thumb">
+                            <a href="http://www.changs1992.cn/wechat/web?code=43149">
+                                <img alt="99.9：刑事专业律师 第二季" class="orginSrc" data-url="http://static.miguyu.com/p/movsp/22/43149.jpg" src="http://static.miguyu.com/View/images/imgLoad.png">
+                            </a>
+                            <div class="sessionProgress">
+                                <div class="csessionProgress" style="width:100%">9/9&nbsp;已完结</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---left--->
+                </div>
+                <!---movInfo--->
+                <div class="movActs">
+                    <div class="acts">
+
+                    </div>
+                </div>
+            </div>
+            <!---eachOne--->
+            <div class="movieFlag eachOne" id="movieFlag44640">
+                <div class="movTitle">
+                    <li class="recommd">推荐</li>
+                    <li><a target="_blank" href="http://www.changs1992.cn/wechat/web?code=44640">异狂国度&nbsp; Wild Wild Country&nbsp; (2018)</a></li>
+                    <li>[ 全6集 ][ WEBRip1080pNetflix官方中字 ]</li>
+
+                </div>
+                <div class="movInfo">
+                    <div class="right"><div class="rightInnner">
+                        <div class="briefBox"><div class="briefInner">
+                            <div class="brief">Netflix官原创纪录片，一名充满争议的教派领袖在俄勒冈州的沙漠中建起乌托邦之城，他与当地居民的冲突演变为了全球性丑闻。</div>
+                        </div></div>
+                        <div class="info">
+                            <ul>
+                                <li>导演:</li>
+                                <li>Chapman Way</li>
+                            </ul>
+
+                            <ul>
+                                <li>主演:</li>
+                                <li>奥修</li>
+                                <li>Ma Anand Sheela</li>
+                            </ul>
+
+                            <ul>
+                                <li>分类:</li>
+                                <li>纪录片</li>
+                            </ul>
+
+                            <ul>
+                                <li>地区:</li>
+                                <li>美国</li>
+                            </ul>
+
+                            <ul>
+                                <li class="score">
+                                    <a rel="nofollow" target="blank" href="https://movie.douban.com/subject/27611433">
+                                        豆瓣 9.2					</a>
+                                </li>
+                                <li class="imdb"><a rel="nofollow" target="blank" href="https://www.imdb.com/title/tt7768848">IMDb</a></li>
+                            </ul>
+
+
+                            <ul>
+                                <li>发布时间：2018-03-19</li>
+                            </ul>
+                            <ul>
+                                <li class="fav">
+                                    <a href="javascript:;" >+观影计划 102人</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!---info--->
+                    </div></div>
+                    <!---right--->
+                    <div class="left">
+                        <div class="thumb">
+                            <a href="http://www.changs1992.cn/wechat/web?code=44640">
+                                <img alt="异狂国度" class="orginSrc" data-url="http://static.miguyu.com/p/movsp/23/44640.jpg" src="http://static.miguyu.com/View/images/imgLoad.png">
+                            </a>
+                            <div class="sessionProgress">
+                                <div class="csessionProgress" style="width:100%">6/6&nbsp;已完结</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---left--->
+                </div>
+                <!---movInfo--->
+                <div class="movActs">
+                    <div class="acts">
+
+                    </div>
+                </div>
+            </div>
+            <!---eachOne--->
+            <div class="movieFlag eachOne" id="movieFlag44629">
+                <div class="movTitle">
+                    <li class="recommd">推荐</li>
+                    <li><a target="_blank" href="http://www.changs1992.cn/wechat/web?code=44629">奶奶&nbsp; อาม่า&nbsp; (2016)</a></li>
+                    <li>[ WEB-DL1080p泰语中字 ][ 天府泰剧 ]</li>
+
+                </div>
+                <div class="movInfo">
+                    <div class="right"><div class="rightInnner">
+                        <div class="briefBox"><div class="briefInner">
+                            <div class="brief">泰国喜剧恐怖片。这位有钱的奶奶去世了，子女后代们便回来聚在了一起。每个人都想做亿万富翁，每个人都拿多一些的份额。但是要想拿到遗产就必须遵守规则完成任务，于是，很多诡异的事件在前方等着他们……</div>
+                        </div></div>
+                        <div class="info">
+                            <ul>
+                                <li>导演:</li>
+                                <li>Bordeekorn Lohachala</li>
+                            </ul>
+
+                            <ul>
+                                <li>主演:</li>
+                                <li>Ratklao Amratisha</li>
+                                <li>Mum Jokmok</li>
+                            </ul>
+
+                            <ul>
+                                <li>分类:</li>
+                                <li>喜剧</li>
+                                <li>恐怖</li>
+                            </ul>
+
+                            <ul>
+                                <li>地区:</li>
+                                <li>泰国</li>
+                            </ul>
+
+                            <ul>
+                                <li class="score">
+                                    <a rel="nofollow" target="blank" href="https://movie.douban.com/subject/27062862">
+                                        豆瓣 4.8					</a>
+                                </li>
+                                <li class="imdb"><a rel="nofollow" target="blank" href="https://www.imdb.com/title/tt6414768">IMDb</a></li>
+                            </ul>
+
+
+                            <ul>
+                                <li>发布时间：2018-03-19</li>
+                            </ul>
+                            <ul>
+                                <li class="fav">
+                                    <a href="javascript:;" >+观影计划 16人</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!---info--->
+                    </div></div>
+                    <!---right--->
+                    <div class="left">
+                        <div class="thumb">
+                            <a href="http://www.changs1992.cn/wechat/web?code=44629">
+                                <img alt="奶奶" class="orginSrc" data-url="http://static.miguyu.com/p/movsp/23/44629.jpg" src="http://static.miguyu.com/View/images/imgLoad.png">
+                            </a>
+                        </div>
+                    </div>
+                    <!---left--->
+                </div>
+                <!---movInfo--->
+                <div class="movActs">
+                    <div class="acts">
+
+                    </div>
+                </div>
+            </div>
+            <!---eachOne--->
+            <div class="movieFlag eachOne" id="movieFlag43037">
+                <div class="movTitle">
+                    <li class="recommd">推荐</li>
+                    <li><a target="_blank" href="http://www.changs1992.cn/wechat/web?code=43037">生在幼子&nbsp; 幼な子われらに生まれ&nbsp; (2017)</a></li>
+                    <li>[ 蓝光720p/1080p日语中字 ][ 猪猪日剧字幕组 ]</li>
+
+                </div>
+                <div class="movInfo">
+                    <div class="right"><div class="rightInnner">
+                        <div class="briefBox"><div class="briefInner">
+                            <div class="brief">2017年日本旬报十佳影片NO.04。电影改编自直木奖获奖作家重松清的同名小说，由《玻璃芦苇》的导演三岛有纪子执导。故事讲述了带着孩子的离婚男人信（浅野忠信饰）和第二任妻子奈苗（田中丽奈饰）及她此前所生的两个女儿过着平凡而幸福的生活。当奈苗...</div>
+                        </div></div>
+                        <div class="info">
+                            <ul>
+                                <li>导演:</li>
+                                <li>三岛有纪子</li>
+                            </ul>
+
+                            <ul>
+                                <li>主演:</li>
+                                <li>浅野忠信</li>
+                                <li>田中丽奈</li>
+                            </ul>
+
+                            <ul>
+                                <li>分类:</li>
+                                <li>剧情</li>
+                            </ul>
+
+                            <ul>
+                                <li>地区:</li>
+                                <li>日本</li>
+                            </ul>
+
+                            <ul>
+                                <li class="score">
+                                    <a rel="nofollow" target="blank" href="https://movie.douban.com/subject/26814623">
+                                        豆瓣 7.5					</a>
+                                </li>
+                                <li class="imdb"><a rel="nofollow" target="blank" href="https://www.imdb.com/title/tt5797164">IMDb</a></li>
+                                <li class="awards">获奖/提名</li>
+                            </ul>
+
+
+                            <ul>
+                                <li>发布时间：2018-01-11</li>
+                            </ul>
+                            <ul>
+                                <li class="fav">
+                                    <a href="javascript:;" >+观影计划 163人</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!---info--->
+                    </div></div>
+                    <!---right--->
+                    <div class="left">
+                        <div class="thumb">
+                            <a href="http://www.changs1992.cn/wechat/web?code=43037">
+                                <img alt="生在幼子" class="orginSrc" data-url="http://static.miguyu.com/p/movsp/22/43037.jpg" src="http://static.miguyu.com/View/images/imgLoad.png">
+                            </a>
+                        </div>
+                    </div>
+                    <!---left--->
+                </div>
+                <!---movInfo--->
+                <div class="movActs">
+                    <div class="acts">
+
+                    </div>
+                </div>
+            </div>
+            <!---eachOne--->
+            <div class="movieFlag eachOne" id="movieFlag27494">
+                <div class="movTitle">
+                    <li class="recommd">推荐</li>
+                    <li><a target="_blank" href="http://www.changs1992.cn/wechat/web?code=27494">强岛&nbsp; Strong Island&nbsp; (2017)</a></li>
+                    <li>[ WEB-DL720p中英字幕 ][ cool翻译 ]</li>
+
+                </div>
+                <div class="movInfo">
+                    <div class="right"><div class="rightInnner">
+                        <div class="briefBox"><div class="briefInner">
+                            <div class="brief">提名第90届奥斯卡金像奖(2018)和第67届柏林国际电影节(2017)泰迪熊奖最佳纪录片，入围2017年圣丹斯电影节纪录片单元，英国《视与听》年度25佳作NO.16，扬斯·福特导演，1992年，本片导演扬斯·福特的弟弟威廉被射杀，然而全部...</div>
+                        </div></div>
+                        <div class="info">
+                            <ul>
+                                <li>导演:</li>
+                                <li>扬斯·福特</li>
+                            </ul>
+
+
+                            <ul>
+                                <li>分类:</li>
+                                <li>纪录片</li>
+                            </ul>
+
+                            <ul>
+                                <li>地区:</li>
+                                <li>美国</li>
+                            </ul>
+
+                            <ul>
+                                <li class="score">
+                                    <a rel="nofollow" target="blank" href="https://movie.douban.com/subject/26929016">
+                                        豆瓣 5.8					</a>
+                                </li>
+                                <li class="imdb"><a rel="nofollow" target="blank" href="https://www.imdb.com/title/tt5873150">IMDb</a></li>
+                                <li class="awards">获奖/提名</li>
+                            </ul>
+
+
+                            <ul>
+                                <li>发布时间：2017-12-12</li>
+                            </ul>
+                            <ul>
+                                <li class="fav">
+                                    <a href="javascript:;" >+观影计划 52人</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!---info--->
+                    </div></div>
+                    <!---right--->
+                    <div class="left">
+                        <div class="thumb">
+                            <a href="http://www.changs1992.cn/wechat/web?code=27494">
+                                <img alt="强岛" class="orginSrc" data-url="http://static.miguyu.com/p/movsp/14/27494.jpg" src="http://static.miguyu.com/View/images/imgLoad.png">
+                            </a>
+                        </div>
+                    </div>
+                    <!---left--->
+                </div>
+                <!---movInfo--->
+                <div class="movActs">
+                    <div class="acts">
+
+                    </div>
+                </div>
+            </div>
+            <!---eachOne--->
+        </div>
+        <div class="centerContainer mainPage">
+            <li><a ref="nofollow" title="第一页" href="http://www.changs1992.cn">第1页</a></li>
+
+
+            <li class='selected'><a ref="nofollow" href="http://www.changs1992.cn/main/pn1.html">1</a>
+            </li>
+            <li><a ref="nofollow" href="http://www.changs1992.cn/main/pn2.html">2</a>
+            </li>
+            <li><a ref="nofollow" href="http://www.changs1992.cn/main/pn3.html">3</a>
+            </li>
+            <li><a ref="nofollow" href="http://www.changs1992.cn/main/pn4.html">4</a>
+            </li>
+            <li><a ref="nofollow" href="http://www.changs1992.cn/main/pn5.html">5</a>
+            </li>
+
+            <li><input type="text" id="goPageNum_input" ahref="http://www.changs1992.cn/main/pn" ext=".html"/></li>
+            <li><a id="goPageNum_link" href="javascript:;" title="输入页码跳转">跳转</a></li>
+
+            <li><a ref="nofollow" title="下5页" href="http://www.changs1992.cn/main/pn8.html">&gt</a></li>
+
+            <li><a ref="nofollow" title="末页" href="http://www.changs1992.cn/main/pn50.html">末页</a></li>
+        </div>
+
+    </div>
+    <!---/mainBox--->
+    <div class="siderBar">
+
+        <div class="signDiv">
+            <li class="signBtn">
+                <a href="javascript:;" >我要签到</a>
+            </li>
+            <li>04月11日，2018年第101天</li>
+        </div>
+
+        <div class="siderLinkNav">
+            <a href="http://www.pniao.com/Mov/clickRank">一周点击榜 &raquo;</a>
+        </div>
+        <div class="siderPadding siderMovies">
+            暂无相关内容
+        </div>
+
+
+        <div class="clear"></div>
+
+        <div class="siderLinkNav">联系我们</div>
+        <div class="siderPadding siderContact">
+            <ul>
+
+                <li class="weixin grayImg" title="">
+                    <a target="_blank" href="http://www.pniao.com/View/images/pniaoWX.jpg"><img alt="微信公众号"
+                                                                                                src="http://wx3.sinaimg.cn/large/a84c5ac4gy1fpifpfw29aj2041042jrt.jpg"/></a>
+                </li>
+                <li class="mail grayImg" title="业务洽谈：adamttyy@gmail.com">
+                    <a><img alt="邮件联系" src="http://www.pniao.com/View/images/mail.png"/></a>
+                </li>
+                <li class="qq grayImg" title="QQ交流群：690433212">
+                    <a><img alt="QQ交流" src="http://www.pniao.com/View/images/qq.png"/></a>
+                </li>
+            </ul>
+            <ul class="contactDetail"></ul>
+        </div>
+        <div class="siderPadding supportUs">
+            <img alt="支持我们" src="http://www.pniao.com/View/images/pay.jpg"/>
+        </div>
+
+
+    </div>
+    <!---/siderBar--->
+</div>
+<div class="clear"></div>
+<div class="footerContainer" bg="">
+    <div class="copyRight">
+        <li class="mobileMode">
+            <a href="http://www.pniao.com/Mobile/viewMode/pc">电脑版</a></li>
+        <li>广告洽谈：adu48625@gmail.com，QQ交流群：710775401</li>
+
+    </div>
+
+
+    <div id="goTopBox" class="siderFloatBox goTopBox ieFloat">
+        <div class="btn topBtn" title="返回顶部"><a href="javascript:;">返回顶部</a></div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" charset="utf-8">
+    $().ready(function () {
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?a8bf1ff34b8beab2a6e10ae8a073e5ac";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    })/////百度
+</script>
+</html>
